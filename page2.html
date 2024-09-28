@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Posts</title>
+		<style>			
+			@font-face {
+				font-family: 'Roboto';
+				src: url(font/Roboto/Roboto-Black.ttf);
+			}
+			* {
+				width: fit-content;
+				margin: auto;
+				font-family: 'Roboto', 'sans-serif';
+			}
+			
+			#top {
+				background-color:#1f2936;
+				color:white;
+			}
+			
+			li {
+				display:inline;
+				margin:20px;
+			}
+			
+			a {
+				color: white;
+				font-size: 14px;
+				font-family: 'open sans',arial,sans-serif;
+				text-decoration:none;
+			}
+			
+			button {
+				padding: 5px;
+				padding-right:15px;
+				padding-left:15px;
+				border-radius: 7px;
+				border: none;
+				background-color: #3782f5;
+				color: white;
+			}
+			
+			#img {
+				background-color: #6d737d;
+				padding-top: 80px;
+				padding-bottom: 80px;
+			}
+			
+			div.intro {
+				display: inline-block;
+				vertical-align: top;
+				width: 300px;
+			}
+			
+			div.post {
+				max-width: 250px;
+				margin-top: 10px;
+				color: white;
+			}
+			
+			p.body {
+				max-width: 250px;
+				padding: 10px;
+			}
+			
+			#post1 {
+			}
+			
+			#copy {
+				background-color:#1f2936;
+				color:white;
+				width:100vw;
+				padding-top:50px;
+				padding-bottom:50px;
+			}
+		</style>
+		<script src="./page2.js" defer></script>
+	</head>
+	<body>
+		<div id="top">
+			<div style="padding-top:30px;padding-bottom:30px;">
+				<h3>Header logo</h3>
+				<br>
+				<ul id="navigation">
+					<li><a href="front.html">Header link one</a></li>
+					<li><a href="#">Header link two</a></li>
+					<li><a href="page3.html">Header link three</a></li>
+				</ul>
+			</div>
+			<div style="width:100vw;border-top:solid;border-width:thin;border-color:grey;"></div>
+			<div style="padding-top:30px;padding-bottom:30px;">
+				<div class="intro" id="sign1">
+					<h1>This website is awesome</h1><br>
+					<p style="font-family:'sans-serif';";>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non mollis nibh donec.</p><br>
+					<button type="button">Sign up</button>
+				</div>
+				<div class="intro" id="img">
+					<!-- <img  src="___" alt="This is a placeholder for an image" /> -->
+					<p style="text-align: center;">This is a placeholder for an image</p>
+				</div>
+			</div>
+		</div>
+		<br><br><h1>Posts</h1><br><br>
+		<div class="post" id="post1">
+			<h1 id="title1">Title</h1>
+			<p class="body" id="body1">Body</p>
+		</div>
+		<div class="post" id="post2">
+			<h1 id="title2">Title</h1>
+			<p class="body" id="body2">Body</p>
+		</div>
+		<div class="post" id="post3">
+			<h1 id="title3">Title</h1>
+			<p class="body" id="body3">Body</p>
+		</div>
+		<br><br><br><br>
+		<div id="copy">
+			<p>Copyright ©</p>
+		</div>
+	</body>
+</html>

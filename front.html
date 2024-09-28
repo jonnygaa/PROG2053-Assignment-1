@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Front</title>
+		<style>			
+			@font-face {
+				font-family: 'Roboto';
+				/*Gets font from file*/
+				src: url(font/Roboto/Roboto-Black.ttf);
+			}
+			* {
+				width: fit-content;
+				margin: auto;
+				font-family: 'Roboto', 'sans-serif';
+			}
+			
+			#top {
+				background-color:#1f2936;
+				color:white;
+			}
+			
+			li {
+				display:inline;
+				margin:20px;
+			}
+			
+			a {
+				color: white;
+				font-size: 14px;
+				font-family: 'open sans',arial,sans-serif;
+				text-decoration:none;
+			}
+			
+			button {
+				padding: 5px;
+				padding-right:15px;
+				padding-left:15px;
+				border-radius: 7px;
+				border: none;
+				background-color: #3782f5;
+				color: white;
+			}
+			
+			#img {
+				background-color: #6d737d;
+				padding-top: 80px;
+				padding-bottom: 80px;
+			}
+			
+			div.intro {
+				display: inline-block;
+				vertical-align: top;
+				width: 300px;
+			}
+			
+			div.info {
+				width: 700px;
+				display: grid;
+				/*Puts info into a 2x2 grid*/
+				grid-template-columns: repeat(2, 1fr);
+				grid-column-gap: 10px;
+				grid-row-gap: 5px;
+				padding-left:400px;
+				padding-right:400px;
+			}
+			
+			div.box {
+				width: 250px;
+				height: 150px;
+				border: 3px solid blue;
+				border-radius: 15px;
+			}
+			
+			#quote {
+				background-color: #e4e5eb;
+				/*Stretches across the whole screen*/
+				width: 100vw;
+				padding-top:50px;
+				padding-bottom:50px;
+				
+			}
+			
+			#q {
+				width: 700px;
+				font-family: 'Arial';
+				text-shadow: -6px 5px 16px rgba(128, 128, 128, 1);
+				font-size: 30px;
+			}
+			
+			#navn {
+				width: 700px;
+				text-align: right;
+				font-size: 18px;
+			}
+			
+			#sign2 {
+				background-color:#3782f5;
+				color:white;
+				border-radius: 15px;
+				padding:20px;
+				padding-left:100px;
+				padding-right:100px;
+			}
+			
+			div.signUp{
+				display: inline-block;
+				vertical-align: top;
+				padding-left:50px;
+				padding-right:50px;
+			}
+			
+			#copy {
+				background-color:#1f2936;
+				color:white;
+				width:100vw;
+				padding-top:50px;
+				padding-bottom:50px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="top">
+			<div style="padding-top:30px;padding-bottom:30px;">
+				<h3>Header logo</h3>
+				<br>
+				<ul id="navigation">
+					<li><a href="#">Header link one</a></li>
+					<li><a href="page2.html">Header link two</a></li>
+					<li><a href="page3.html">Header link three</a></li>
+				</ul>
+			</div>
+			<!-- Line under links -->
+			<div style="width:100vw;border-top:solid;border-width:thin;border-color:grey;"></div>
+			<div style="padding-top:30px;padding-bottom:30px;">
+				<div class="intro" id="sign1">
+					<h1>This website is awesome</h1><br>
+					<p style="font-family:'sans-serif';";>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non mollis nibh donec.</p><br>
+					<button type="button">Sign up</button>
+				</div>
+				<div class="intro" id="img">
+					<!-- <img  src="___" alt="This is a placeholder for an image" /> -->
+					<p style="text-align: center;">This is a placeholder for an image</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<h1>Some random informatin</h1>
+		<div class="info">
+			<div class="box"></div>
+			<div id="t1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci nisi, efficitur nec turpis vitae, laoreet euismod orci. Maecenas condimentum.</p>
+			</div>
+			<div id="t2">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci nisi, efficitur nec turpis vitae, laoreet euismod orci. Maecenas condimentum.</p>
+			</div>
+			<div class="box"></div>
+		</div>
+		<br><br><br><br>
+		<div id="quote">
+			<p id="q">
+			This is an inspiring quote, or a testemonial from a 
+			customer. Maybe it's just filling up Space, or maybe
+			people will actually read it. Who knows. All i knows
+			is that it looks nice.</p>
+			<p id="navn">-Thor</p>
+		</div>
+		<br><br><br><br>
+		<div id="sign2">
+			<div class="signUp">
+				<p>Call to action! It's time!<br>Lorem ipsum dolor sit amet, consectetur adipiscing.</p> 
+			</div>
+			<div class="signUp">
+				<button style="border-color:white;border:solid;" type="button">Sign up</button>
+			</div>
+		</div>
+		<br><br><br><br>
+		<div id="copy">
+			<p>Copyright ©</p>
+		</div>
+		</script>
+	</body>
+</html>

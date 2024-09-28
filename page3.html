@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather</title>
+		<style>			
+			@font-face {
+				font-family: 'Roboto';
+				src: url(font/Roboto/Roboto-Black.ttf);
+			}
+			* {
+				width: fit-content;
+				margin: auto;
+				font-family: 'Roboto', 'sans-serif';
+			}
+			
+			#top {
+				background-color:#1f2936;
+				color:white;
+			}
+			
+			li {
+				display:inline;
+				margin:20px;
+			}
+			
+			a {
+				color: white;
+				font-size: 14px;
+				font-family: 'open sans',arial,sans-serif;
+				text-decoration:none;
+			}
+			
+			button {
+				padding: 5px;
+				padding-right:15px;
+				padding-left:15px;
+				border-radius: 7px;
+				border: none;
+				background-color: #3782f5;
+				color: white;
+			}
+			
+			#img {
+				background-color: #6d737d;
+				padding-top: 80px;
+				padding-bottom: 80px;
+			}
+			
+			div.intro {
+				display: inline-block;
+				vertical-align: top;
+				width: 300px;
+			}
+			
+			#places {
+				list-style-type: none;
+				padding-left: 0;
+			}
+			
+			#loc {
+				font-size: 20px;
+				text-decoration: underline;
+				text-allign: right;
+			}
+			
+			#info {
+				display: none;
+			}
+			
+			#copy {
+				background-color:#1f2936;
+				color:white;
+				width:100vw;
+				padding-top:50px;
+				padding-bottom:50px;
+			}
+		</style>
+		<script src="./page3.js" defer></script>
+	</head>
+	<body>
+		<div id="top">
+			<div style="padding-top:30px;padding-bottom:30px;">
+				<h3>Header logo</h3>
+				<br>
+				<ul id="navigation">
+					<li><a href="front.html">Header link one</a></li>
+					<li><a href="page2.html">Header link two</a></li>
+					<li><a href="#">Header link three</a></li>
+				</ul>
+			</div>
+			<div style="width:100vw;border-top:solid;border-width:thin;border-color:grey;"></div>
+			<div style="padding-top:30px;padding-bottom:30px;">
+				<div class="intro" id="sign1">
+					<h1>This website is awesome</h1><br>
+					<p style="font-family:'sans-serif';";>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non mollis nibh donec.</p><br>
+					<button type="button">Sign up</button>
+				</div>
+				<div class="intro" id="img">
+					<!-- <img  src="___" alt="This is a placeholder for an image" /> -->
+					<p style="text-align: center;">This is a placeholder for an image</p>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<h1>Weather</h1>
+		<br>
+		<!-- Makes list for each weather update -->
+		<ul id="places">
+			<li id="1"></li>
+			<li id="2"></li>
+			<li id="3"></li>
+			<li id="4"></li>
+			<li id="5"></li>
+			<li id="6"></li>
+		</ul>
+		<br><br>
+		<div id="copy">
+			<p>Copyright ©</p>
+		</div>
+	</body>
+</html>
